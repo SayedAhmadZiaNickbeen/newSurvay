@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>student information form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Student Information Form </h1>
+  <p id="description">Kabul University Student Information Form</p>
+
+  <form id="form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="number" id="number-label">Number:</label>
+    <input type="number" id="number" name="number" placeholder="Enter a number" min="1" max="100" required>
+
+    <label for="dropdown">Select Program:</label>
+    <select id="dropdown" name="dropdown" required>
+      <option value="option1">Bachelor Program</option>
+      <option value="option2">Master Program</option>
+      <option value="option3">Doctoral Program</option>
+    </select>
+    <div>
+        <h3>Choose one of the following faculties:</h3>
+      <label>
+        <input type="radio" name="radio" value="Medicine" required> Medicine
+      </label>
+      <label>
+        <input type="radio" name="radio" value="Engeneering" required> Engeneering
+      </label> 
+    </div>
+
+    <div>
+         <h3>Choose one or more of the following subjects:</h3>
+      <label>
+        <input type="checkbox" name="checkbox" value="biology"> Biology
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox" value="math"> Math
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox" value="chemistry"> Chemistry
+      </label>
+    </div>
+
+
+    <label id="label-comments" for="comments">Additional information:</label>
+    <textarea id="comments" name="comments" placeholder="Enter your information here"></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
